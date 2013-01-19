@@ -47,8 +47,6 @@ try:
     if cmd_subfolder not in sys.path:
         sys.path.insert(0, cmd_subfolder)
     
-    assert lib
-    
     from lib import *
     from util import *
     from app import *
