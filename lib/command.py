@@ -34,11 +34,8 @@ class Command(dict):
             Util.log("Attempting to set Command settings...", 4 )
             if type(cmd) is str:
                 Util.log("Settings are a string \""+ cmd +"\"", 5 )
-                Util.log("Attempting to parse string into JSON object", 5 )
                 self.cmd = json.loads( cmd )
-                Util.log("All gravy")
                 Util.log( self.cmd )
-                Util.log("Got json object with command name \""+self.cmd['name']+"\"!", 5 )
                 self.name = self.cmd['name']
                 self.raw = cmd    
             elif type(cmd) is dict:
@@ -54,10 +51,7 @@ class Command(dict):
             else:
                 Util.log("Settings are not recognized", 5 )
                 if name:
-                    self.name = name
-                    
-            if self.name not in Commands.client:
-                Util.log("Command is allowed for clients", 4 )
+                    self.name = name5
         except:
             Util.log("Unexpected error:" + str(sys.exc_info()[0]), 2 )
             Util.log("There was an issue loading the Command settings!", 1 )
@@ -68,7 +62,7 @@ class Command(dict):
         mutables = ['message','name','code','data']
         Util.log("Checking if attribute "+key+" is in response code", 4 )
         if key in mutables:
-            Util.log("Key exists! \""+key+"\" attribute will be given the property \""+value+"\"", 4 )
+            Util.log("Key exists! \""+key+"\" attribute will be given the property \""+str(value)+"\"", 4 )
             if (key == 'message'):
                 self.response['status']['message'] = value
             elif (key == 'name'):
@@ -80,10 +74,16 @@ class Command(dict):
             Util.log("Response list updated!")
         else:
             Util.log("Item is not in response mutable list, setting value...", 5)
-            setter(self, key, value)
+    
+        setter(self, key, value)
             
     def __setitem__(self, key, value):
+        Util.log("Transfering dict item set", 5 )
         self.__catchsetcalls__(key, value, dict.__setitem__)
     
     def __setattr__(self, key, value):
+        Util.log("Transfering dict attr set", 5 )
         self.__catchsetcalls__(key, value, dict.__setattr__)
+    
+    def __str__(self):
+        return self.response

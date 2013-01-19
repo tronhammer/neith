@@ -1,4 +1,7 @@
 from util import *
+from status import *
+from client import *
+from command import *
 
 Util.log("Building Connect Command class", 5 )
 class ConnectCommand( Command ):

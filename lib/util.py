@@ -1,8 +1,6 @@
 import sys, traceback
 from pprint import pprint
 
-from util import *
-
 pprint("Building Logger class")
 class Logger:
     level = 5

@@ -1,4 +1,7 @@
 from util import *
+from status import *
+from client import *
+from command import *
 
 # Command Classes Available
 Util.log("Building Basic Command class", 5 )
