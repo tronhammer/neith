@@ -8,10 +8,11 @@ Present
 * √ can execute info command
 * √ can exit
 * PyDoc and PyPI configurations
-* Initial Test Units for first three "cans" in this list
 
 Short Term
 ==========
+* bin/clients/dest.py file that is a python connector to neith. (dest used as both "destiny" and "destination")
+* Initial Test Units for first three "cans" in this list
 * log file directory and configuration
 * move Logger to its own module and have it utilize new log functionality
 * import new logger module before everything else
@@ -23,7 +24,6 @@ Short Term
 * stop script
 * restart script
 * status script
-* Client.py script
 * update README with explinations for all the files and their purposes and link them to files in ./docs/
 
 
@@ -51,6 +51,11 @@ Yeah right
 ===========
 * Internationalization
 * Optional configuration for multi processing over multi threading when available
+* Have it so that bin/clients/dest* are distributable client modules (of some language) that connects home with a hardcoded token
+*	these distrubutable files can be Neith Destiny engines with that can launch a preloaded set of commands
+*   requires a distinction between a permanent and session token
+*   requires a bin/ command that can accept a list of commands, client name, etc, and build out a client with a preloaded set of commands and a permenant token
+*	Other clients can wire in and get a session token from the Neith engine on the primary C&C
 
 Built in Neith Commands
 =================

@@ -5,7 +5,7 @@ Neith
 This will be the central Command and Control unit
 """
 
-import sys, socket, os, inspect, traceback, glob, getopt
+import sys, socket, os, traceback, getopt
 
 # Utilized for importing the config file
 from ConfigParser import SafeConfigParser
@@ -29,12 +29,12 @@ def main(argv):
     for opt, arg in opts:                
         if opt in ("-h", "--help"):      
             usage()
-            sys.exit(0)                  
-        elif opt in ("-d", "--debug"):                
-            global _debug               
+            sys.exit(0)
+        elif opt in ("-d", "--debug"):
+            global _debug
             _defined['debug'] = 1 
         elif opt in ("-c", "--config-directory"): 
-            _defined['config_dir'] = arg                 
+            _defined['config_dir'] = arg
         elif opt in ("-p", "--port"): 
             _defined['port'] = arg
     

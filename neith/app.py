@@ -80,5 +80,5 @@ def open(sock):
                 else:
                     util.log("Command sent over did not represent any known configuration!", 2 )
                     util.log( cmd , 4 )
+                    socket_client.sendall('{"status":{"code":0,"message":"command executed succesfully!"}}')
             util.log("Command "+cmd.name+" executed")
-            socket_client.sendall('{"status":{"code":0,"message":"command executed succesfully!"}}')
