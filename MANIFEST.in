@@ -1,0 +1,9 @@
+include README
+include CHANGES
+include LICENSE
+
+recursive-include bin *
+ 
+recursive-include docs * 
+
+recursive-include neith *.py

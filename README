@@ -1,0 +1,34 @@
+=====
+Neith
+=====
+
+Installs will eventually be done by a simplified installer in
+
+	/bin/sh ./bin/install
+
+neith
+=====
+
+This will be a command and control engine utilizing python.  It will be used to interface several language for learning purposes in order to better master the various paradigms used in common scenarios.
+
+
+More to come!
+-------------
+
+Plans for the future
+
+* client signatures
+* PyDoc and PyPI configurations
+* File listener
+* Port listener
+* Extendable command options
+* Client lock down
+* Key distribution and localization
+* Encrypted traffic on both ends
+
+Plans for utilization
+_____________________
+
+1) Maintaining contact with all owned devices in order to establish coordinated rules and effects based on state changes int he device
+2) Allowing for commands to be sent from non local devices based on authentication measures executed by Neith
+3) Providing a transportable communication layer that can be interacted with via a multitude of platforms and languages
