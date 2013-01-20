@@ -18,7 +18,7 @@ socket_port = 9099
 socket_backlog = 5
 socket_size = 1024
 
-def start():
+def start( config ):
     util.log("Application calls start", 5 )
     util.log('Creating Socket...', 3 )
     try:
@@ -26,8 +26,8 @@ def start():
     except socket.gaierror:
         util.log( 'Could not connect to socket!', 1 )
         sys.exit()
-    util.log( 'Binding to socket on ' + str(socket_port),  )
-    sock.bind( (socket_host, socket_port) )
+    util.log( 'Binding to socket on ' + str(config['port'] or socket_port),  )
+    sock.bind( (socket_host, int(config['port'] or socket_port) ) )
     sock.listen( socket_backlog )
     open(sock)
     util.log("Exiting out!")
