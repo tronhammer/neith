@@ -1,7 +1,7 @@
-from util import *
+from .. import util
 from client import *
 
-Util.log("Building Service Client class")
+util.log("Building Service Client class")
 class ServiceClient( Client ):
     type = "service"
     allowed_commands = [""]

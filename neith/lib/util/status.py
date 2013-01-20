@@ -1,12 +1,12 @@
-from util import *
+import logger
 
-Util.log("Building Status")
+logger.log("Building Status")
 class Status:
     code = 0
     message = 0
     
     def __init__(self, status, code):
-        Util.log("Creating a Status...", 5 )
+        logger.log("Creating a Status...", 5 )
         if type(status) is str:
             self.message = status
             self.code = code    

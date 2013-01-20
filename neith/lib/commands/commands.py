@@ -1,4 +1,8 @@
-Util.log("Building Commands class", 5 )
+###
+# THIS FILE IS CURRENTLY NOT BEING USED!
+##
+
+util.log("Building Commands class", 5 )
 class Commands:
     levels = ["guest","application","service"]
     available = {

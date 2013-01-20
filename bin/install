@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# Accept and parse parameters for configuration
+
+# Create app token (sha1, or some gpg signature)
+#	App token will be used for signing clients and authenticating them
+
+# Opt for config file or db
+#	Create DB and config table
+# else
+#	Create configuration file
+
+# link neithd to /usr/bin/
+# initialize deamon
+
+# add deamon to system startup items if in configuration request

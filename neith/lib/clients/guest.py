@@ -1,7 +1,7 @@
-from util import *
+from .. import util
 from client import *
 
-Util.log("Building Guest Client class", 5 )
+util.log("Building Guest Client class", 5 )
 class GuestClient( Client ):
     type = "guest"
     allowed_commands = ["connect"]

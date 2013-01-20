@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# This will be the deamonized script running the Neith engine
+
+# Utilize neith/bin/start, neith/bin/stop, neith/bin/restart, neith/bin/status

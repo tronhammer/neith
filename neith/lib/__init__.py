@@ -1,1 +1,3 @@
-__all__ = ["util", "status", "clientToken", "client", "clients", "command", "commands", "app"]
+print "Lib modules being read in..."
+
+__all__ = ["util", "commands", "clients"]

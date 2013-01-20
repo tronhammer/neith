@@ -1,0 +1,60 @@
+Present
+=======
+* √ Files Organized
+* √ Utilize modulization over classes where applicable
+* √ namespacing is uniform and isolated
+* √ run.py works and is listening
+* √ can connect to listening socket and create a client token
+* √ can execute info command
+* √ can exit
+* PyDoc and PyPI configurations
+* Initial Test Units for first three "cans" in this list
+
+Short Term
+==========
+* log file directory and configuration
+* move Logger to its own module and have it utilize new log functionality
+* import new logger module before everything else
+* add log file directory to .gitignore
+* install script
+* uninstall script
+* deamonized script
+* start script
+* stop script
+* restart script
+* status script
+* Client.py script
+* update README with explinations for all the files and their purposes and link them to files in ./docs/
+
+
+
+Long Term
+=========
+* multi threading clients
+* looping sock recv until a specified token for end of input has been matched
+* Channel module which bridges the communication between one Client to another Client(s)
+* file configuration with ports and addresses, which commands to utilize, etc
+* create area available for extended thirdparty and custom Commands
+* create area available for extended thirdparty and custom Clients
+* client signatures
+* Client lock down
+* Key distribution and localization
+* Encrypted traffic on both ends
+* Plato style explination as to why I made Neith
+* Configuration based on os in os.ini
+* database utilization and configuration with db.ini
+* Better defile private variables and scopes
+* Utilize decorators
+* log deamon
+
+Yeah right
+===========
+* Internationalization
+* Optional configuration for multi processing over multi threading when available
+
+Built in Neith Commands
+=================
+* connect
+* info
+* pipeLogFile
+* fileStream

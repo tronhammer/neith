@@ -1,7 +1,7 @@
-from util import *
+from .. import util
 from client import *
 
-Util.log("Building App Client class")
+util.log("Building App Client class")
 class AppClient( Client ):
     type = "application"
     allowed_commands = ["info"]

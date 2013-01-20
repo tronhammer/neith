@@ -1,15 +1,15 @@
 =====
-Neith
+Under-neith It All
 =====
 
 Installs will eventually be done by a simplified installer in
 
 	/bin/sh ./bin/install
 
-neith
+Neith
 =====
 
-This will be a command and control engine utilizing python.  It will be used to interface several language for learning purposes in order to better master the various paradigms used in common scenarios.
+This will be a command and control engine utilizing python.  It will be used to interface several language for learning purposes in order to better master the various paradigms used in common scenarios.  From there, it will interface command modules with clients and allow for content flow between two systems based on a permission set advocated to the client.
 
 
 More to come!
