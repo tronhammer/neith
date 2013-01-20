@@ -1,10 +1,10 @@
-=====
+==================
 Under-neith It All
-=====
+==================
 
 Installs will eventually be done by a simplified installer in
 
-	/bin/sh ./bin/install
+	/bin/bash ./bin/install
 
 Neith
 =====

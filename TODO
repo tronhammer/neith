@@ -11,7 +11,7 @@ Present
 
 Short Term
 ==========
-* bin/clients/dest.py file that is a python connector to neith. (dest used as both "destiny" and "destination")
+* √ clients/pharaohs/Rasberry_PI.py file that is a python connector to neith. (dest used as both "destiny" and "destination")
 * Initial Test Units for first three "cans" in this list
 * log file directory and configuration
 * move Logger to its own module and have it utilize new log functionality
@@ -25,7 +25,8 @@ Short Term
 * restart script
 * status script
 * update README with explinations for all the files and their purposes and link them to files in ./docs/
-
+* run with python -t to see if there is a mixture of tabs and spaces, convert all tabs to 4 spaces
+* max 79 characters per line if possible
 
 
 Long Term
@@ -56,6 +57,7 @@ Yeah right
 *   requires a distinction between a permanent and session token
 *   requires a bin/ command that can accept a list of commands, client name, etc, and build out a client with a preloaded set of commands and a permenant token
 *	Other clients can wire in and get a session token from the Neith engine on the primary C&C
+* Command install/update channel where commands on clients can be installed or updated
 
 Built in Neith Commands
 =================
