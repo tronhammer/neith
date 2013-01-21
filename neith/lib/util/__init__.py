@@ -1,3 +1,10 @@
+"""Library module
+
+Contains a repository of all the Library modules available to the 
+Neith Loom Engine. This also contains the definitions for Clients 
+and Commands that will largely represent the transactions taking 
+place in the Loom"""
+
 print "Util modules being read in..."
 
 __all__ = ["logger", "status", "clientToken"]

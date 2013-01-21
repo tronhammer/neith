@@ -1,3 +1,9 @@
+"""Loom Module module
+
+Utilized for socket management and command forwarding between Clients 
+and the Loom
+"""
+
 import sys, socket
 
 # Class structure is a two level paradigm
@@ -18,7 +24,8 @@ socket_port = 9099
 socket_backlog = 5
 socket_size = 1024
 
-def start( config ):
+def weave( config ):
+    """Creates a socket on a specified port for listening"""
     util.log("Application calls start", 5 )
     util.log('Creating Socket...', 3 )
     try:
@@ -35,6 +42,7 @@ def start( config ):
     sys.exit()
                 
 def open(sock):
+    """Opens the socket for listening and piping Commands to their respective Clients"""
     socket_listen = 1
     socket_client = None
     address = None

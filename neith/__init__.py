@@ -7,7 +7,7 @@
         opening a socket by which Clients can communicate securely commands 
         and results in a continous fashion.
 .. moduleauthor:: Sean Murray <smurray@python.invalid>
-.. function:: _unit_test(msg)
+.. function:: run_unit_test(msg)
 
 Neiths Loom
     The central cortex of the application. Its main function is to accept 
@@ -48,7 +48,7 @@ Destiny
     Commands advocated are generally limited to the capabilities of the 
     Dynasty.
 
->>> _unit_test("testo")
+>>> run_unit_test("test_token")
 'testo'
 """
 print "Neith modules being read in..."
@@ -58,7 +58,7 @@ __all__ = ["lib", "app"]
 import lib
 import app
 
-def _unit_test(msgo):
+def run_unit_test(msgo):
     """Return a success of true or false
 
     >>> lib.util.log("test_token")
@@ -70,6 +70,5 @@ def _unit_test(msgo):
 # Only time this module should be run directly is for test units
 if __name__ == "__main__":
     print "==> RUNNING UNIT TESTS"
-    
     import doctest
     doctest.testmod(verbose=True)

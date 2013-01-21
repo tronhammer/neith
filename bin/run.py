@@ -59,10 +59,10 @@ def main(argv):
             sys.path.append(cmd_folder)
             
     import neith
-    assert neith.app
+    assert neith.loom
 
     neith.lib.util.log("Starting...", 3)
-    neith.app.start( _defined )
+    neith.loom.weave( _defined )
 
 def usage():
     global exit_clear
