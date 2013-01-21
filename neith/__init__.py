@@ -1,10 +1,14 @@
-"""
-This is the "neith" module.
+""":mod:`neith` -- Neith Loom Engine
+=============================
 
-The module builds out the necessary library files required for opening a 
-socket by which Clients can communicate securely commands and 
-results in a continous fashion.
-    
+.. module:: neith
+   :platform: Mac, Unix
+   :synopsis: The module builds out the necessary library files required for 
+        opening a socket by which Clients can communicate securely commands 
+        and results in a continous fashion.
+.. moduleauthor:: Sean Murray <smurray@python.invalid>
+.. function:: _unit_test(msg)
+
 Neiths Loom
     The central cortex of the application. Its main function is to accept 
     incomming connections, identify Commands, create Clients, verify 
@@ -44,6 +48,8 @@ Destiny
     Commands advocated are generally limited to the capabilities of the 
     Dynasty.
 
+>>> _unit_test("testo")
+'testo'
 """
 print "Neith modules being read in..."
 
@@ -52,12 +58,18 @@ __all__ = ["lib", "app"]
 import lib
 import app
 
-"""
->>> neith.lib.util.log("test_token")
-test_token
-"""
+def _unit_test(msgo):
+    """Return a success of true or false
 
+    >>> lib.util.log("test_token")
+    'test_token'
+    """
+    
+    lib.util.log( msgo )
+    
 # Only time this module should be run directly is for test units
 if __name__ == "__main__":
+    print "==> RUNNING UNIT TESTS"
+    
     import doctest
     doctest.testmod(verbose=True)
