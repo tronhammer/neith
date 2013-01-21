@@ -1,0 +1,10 @@
+===============================
+Custom and Third Party Commands
+===============================
+
+The commands directory is a repository of custom and third party Commands  
+that the Neith Loom can import and utilize during run time.
+
+These same Commands will also be availabe during the Client creation process 
+and can be selected and packaged individually as Destiny objects into a 
+Pharaoh or Deity Client for distribution to other devices.

@@ -1,0 +1,6 @@
+===============================
+Custom and Third Party Clients
+===============================
+
+The clients directory is a collection of generated clients via the command 
+line options bin/create_pharaoh and bin/create_deity

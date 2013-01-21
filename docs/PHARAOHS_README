@@ -1,0 +1,18 @@
+=============
+Pharaoh Clients
+=============
+
+This is where Pharaoh Clients will live. Pharaohs have a session token and 
+will have the ability to execute Commands on the Neith Loom server depending 
+on the permission set and Commands available to the Deity. 
+
+Depending on the platforms requested during creation with the bin/create_pharaoh 
+command, there will be a listing of various platform types with deity files 
+located inside, like so::
+
+	$: tree neith/clients/pharaohs/
+	
+	neith/clients/pharaohs/
+	├── README -> PHAROAHS_README
+	└── python
+	    └── Raspberry_PI.py

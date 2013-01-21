@@ -1,0 +1,19 @@
+=============
+Deity Clients
+=============
+
+This is where Deity Clients will live. Deities have a permanant token and 
+will have the ability to execute Commands on the Neith Loom server depending 
+on the permission set and Commands available to the Deity. 
+
+Depending on the platforms requested during creation with the bin/create_deity 
+command, there will be a listing of various platform types with deity files 
+located inside, like so::
+
+	$: tree neith/clients/deities/
+	
+	neith/clients/deities/
+	├── README -> DEITIES_README
+	└── python
+	    └── Raspberry_PI.py
+	
